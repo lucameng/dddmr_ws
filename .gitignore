@@ -7,7 +7,6 @@ install/
 log/
 output/*
 cliff.toml
-AGENTS.md
 .clang-format
 .catkin_workspace
 .codex
