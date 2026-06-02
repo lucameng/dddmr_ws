@@ -1,0 +1,15 @@
+.vscode/
+.claude/
+.codex/
+build/
+devel/
+install/
+log/
+output/*
+cliff.toml
+AGENTS.md
+.clang-format
+.catkin_workspace
+.codex
+.claude
+.agents
