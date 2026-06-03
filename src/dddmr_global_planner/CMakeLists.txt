@@ -115,6 +115,17 @@ ament_target_dependencies(occupancy2ground
   ${dependencies}
 )
 
+#pcd_map_publisher
+add_executable(pcd_map_publisher
+  utils/pcd_map_publisher.cpp
+)
+target_link_libraries(pcd_map_publisher
+  ${PCL_LIBRARIES}
+)
+ament_target_dependencies(pcd_map_publisher
+  ${dependencies}
+)
+
 #dummy_pc_publisher
 add_executable(dummy_pc_publisher
   test/dummy_pc_pub.cpp
@@ -140,6 +151,7 @@ install(TARGETS
   global_planner_node
   dummy_pc_publisher
   occupancy2ground
+  pcd_map_publisher
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
 
